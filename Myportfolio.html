@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandrasen's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #f0f0f0, #e6e9f0); color: #333; line-height: 1.6; overflow-x: hidden; }
+    header { background: #1e1e2f; color: white; padding: 2rem; text-align: center; position: relative; overflow: hidden; }
+    header h1 { font-size: 2.5rem; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
+    .container { max-width: 960px; margin: 2rem auto; padding: 1rem; }
+    section { margin-bottom: 2rem; }
+    h2 { color: #1e1e2f; margin-bottom: 1rem; }
+    .skills, .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .skill, .project { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+    .skill:hover, .project:hover { transform: translateY(-5px); }
+    .btn { display: inline-block; padding: 0.7rem 1.2rem; background: #1e1e2f; color: white; text-decoration: none; border-radius: 5px; margin-top: 1rem; transition: background 0.3s ease; }
+    .btn:hover { background: #33334d; }
+    footer { text-align: center; padding: 1rem; background: #eee; margin-top: 2rem; }
+
+    /* Floating Icons */
+    .floating-icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .floating-icons img {
+      position: absolute;
+      animation: float 10s infinite ease-in-out;
+      opacity: 0.1;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="floating-icons">
+      <img src="Images/bnb-bnb-logo.svg" width="60" style="top: 20px; left: 10%;">
+      <img src="Images/bitcoin-btc-logo.svg" width="50" style="top: 80px; left: 70%;">
+      <img src="Images/ethereum-eth-logo.svg" width="40" style="top: 40px; left: 40%;">
+      <img src="Images/pepe-pepe-logo.svg" width="40" style="top: 40px; left: 60%;">
+      <img src="Images/usd-coin-usdc-logo.svg" width="40" style="top: 40px; left: 30%;">
+    </div>
+    <h1>Chandrasen Tathagat</h1>
+    <p>Blockchain Developer | Smart Contract Enthusiast</p>
+  </header>
+  <div class="container">
+    <section data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I am a blockchain developer with a passion for building secure, decentralized applications. I have experience working with Solidity, smart contracts, and blockchain architecture. I recently built a Blockchain-Based Fraud Detection System as part of my final year project.</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-delay="100">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Solidity</div>
+        <div class="skill">Smart Contracts</div>
+        <div class="skill">Ethereum</div>
+        <div class="skill">Blockchain</div>
+        <div class="skill">Web3.js</div>
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git/GitHub</div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" data-aos-delay="200">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Blockchain-Based Fraud Detection System</h3>
+          <p>A smart contract-based system to detect and prevent fraudulent activities in transactions using blockchain technology.</p>
+          <a class="btn" href="http://127.0.0.1:5500/Project/index.html" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" data-aos-delay="300">
+      <h2>Resume</h2>
+      <a class="btn" href="CV/My_CV.pdf" download>Download Resume (PDF)</a>
+    </section>
+
+    <section data-aos="fade-up" data-aos-delay="400">
+      <h2>Contact</h2>
+      <p>Email: chandrasenstathagat@gmail.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/chandrasentathagat" target="_blank">linkedin.com/in/chandrasentathagat</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Chandrasen Tathagat</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
